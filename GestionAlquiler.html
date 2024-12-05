@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alquileres</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Alquileres</h1>
+        <button onclick="navigate('pantallaPrincipal.html')">Volver al Inicio</button>
+    </header>
+    <main>
+        <form id="rentalForm">
+            <label for="rentalBook">Libro</label>
+            <select id="rentalBook" required>
+                <option value="">Seleccione un libro</option>
+            </select>
+
+            <label for="rentalClient">Cliente</label>
+            <select id="rentalClient" required>
+                <option value="">Seleccione un cliente</option>
+            </select>
+
+            <label for="rentalDate">Fecha de Alquiler</label>
+            <input type="date" id="rentalDate" required>
+
+            <div class="buttons">
+                <button type="button" id="addRentalBtn" onclick="addRental()">Agregar</button>
+                <button type="button" id="deleteRentalBtn" onclick="deleteRental()" disabled>Eliminar</button>
+                <button type="button" id="editRentalBtn" onclick="editRental()" disabled>Editar</button>
+                <button type="reset" id="clearRentalBtn">Limpiar</button>
+            </div>
+        </form>
+
+        <h2>Listado de Alquileres</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Libro</th>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody id="rentalTable"></tbody>
+        </table>
+    </main>
+    <script src="alquileres.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Clientes</h1>
+        <button onclick="navigate('pantallaPrincipal.html')">Volver al Inicio</button>
+    </header>
+    <main>
+        <form id="clientForm">
+            <label for="clientName">Nombre del Cliente</label>
+            <input type="text" id="clientName" required>
+            
+            <label for="clientEmail">Correo Electrónico</label>
+            <input type="email" id="clientEmail" required>
+            
+            <label for="clientPhone">Teléfono</label>
+            <input type="tel" id="clientPhone" required>
+            
+            <div class="buttons">
+                <button type="button" id="addClientBtn" onclick="addClient()">Agregar</button>
+                <button type="button" id="deleteClientBtn" onclick="deleteClient()" disabled>Eliminar</button>
+                <button type="button" id="editClientBtn" onclick="editClient()" disabled>Editar</button>
+                <button type="reset" id="clearClientBtn">Limpiar</button>
+            </div>
+        </form>
+        
+        <h2>Listado de Clientes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody id="clientTable"></tbody>
+        </table>
+    </main>
+    <script src="clientes.js"></script>
+</body>
+</html>
