@@ -1,7 +1,7 @@
 let books = []; 
 let selectedRow = null; 
 
-const API_URL = 'http://apiweb2-production.up.railway.app/Controller/libros.php';
+const API_URL = 'https://apiweb2-production.up.railway.app/Controller/libros.php';
 
 // Navegar entre pantallas
 function navigate(url) {

@@ -5,7 +5,7 @@ function navigate(url) {
     window.location.href = url;
 }
 
-const API_URL = 'http://apiweb2-production.up.railway.app/Controller/clientes.php';
+const API_URL = 'https://apiweb2-production.up.railway.app/Controller/clientes.php';
 
 // Función para cargar los clientes desde la API
 async function fetchClients() {

@@ -1,9 +1,9 @@
 let rentals = []; 
 let selectedRentalRow = null;
 
-const clientsAPI = 'http://apiweb2-production.up.railway.app/Controller/clientes.php';
-const booksAPI = 'http://apiweb2-production.up.railway.app/Controller/libros.php';
-const rentalsAPI = 'http://apiweb2-production.up.railway.app/Controller/alquileres.php';
+const clientsAPI = 'https://apiweb2-production.up.railway.app/Controller/clientes.php';
+const booksAPI = 'https://apiweb2-production.up.railway.app/Controller/libros.php';
+const rentalsAPI = 'https://apiweb2-production.up.railway.app/Controller/alquileres.php';
 
 // Función para cargar datos desde la API
 async function fetchData(url) {
