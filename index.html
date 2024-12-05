@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Biblioteca</h1>
+    </header>
+    <main>
+        <div class="menu">
+            <button onclick="navigate('GestionLibros.html')">Gestión de Libros</button>
+            <button onclick="navigate('GestionClientes.html')">Gestión de Clientes</button>
+            <button onclick="navigate('GestionAlquiler.html')">Gestión de Alquileres</button>
+        </div>
+    </main>
+    <script>
+        function navigate(url) {
+            window.location.href = url;
+        }
+    </script> 
+</body>
+</html>
